@@ -20,7 +20,7 @@ function App() {
 	const [games, setGames] = useState<Game[]>();
 
 	useEffect(() => {
-		fetch("URL DA MINHA API")
+		fetch("http://localhost:3333/games")
 			.then((response) => response.json())
 			.then((data) => {
 				setGames(data);
